@@ -1,0 +1,28 @@
+.footer {
+    background-color: cadetblue;
+}
+
+.footerContainer {
+    flex-direction: column;
+    align-items: center;
+}
+
+.cubes {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 300px;
+    flex-wrap: wrap;
+}
+
+.cube {
+    width: 40px;
+    height: 40px;
+    background-color: blue;
+}
+
+@media (max-width: 960px) {
+    .cube {
+        margin: 10px;
+    }
+}

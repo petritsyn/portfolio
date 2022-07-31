@@ -8,9 +8,8 @@ type PropsType = {
 const Project = (props: PropsType) => {
     return (
         <div className={s.project}>
-            <div>
-                <div className={s.icon}></div>
-                <button className={styles.button}>Show</button>
+            <div className={s.imgContainer}>
+                <a href={'#'}><button className={styles.button}>Show</button></a>
             </div>
             <div>
                 <span className={s.projectName}>{props.projectName}</span>

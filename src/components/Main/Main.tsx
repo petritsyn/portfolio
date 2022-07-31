@@ -1,5 +1,5 @@
 import React from 'react';
-import s from './Main.module.css'
+import s from './Main.module.css';
 import styleContainer from '../../common/styles/commonStyles.module.css';
 
 const Main = () => {

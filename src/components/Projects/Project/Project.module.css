@@ -1,6 +1,18 @@
 .project {
+    margin: 15px;
+    background-color: azure;
+}
+
+.imgContainer {
     width: 250px;
-    border: 1px solid;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url("https://images1.content-hci.com/commimg/myhotcourses/blog/post/myhc_89683.jpg");
+    background-size: cover;
+    background-position: center;
 }
 
 .project div:nth-child(1) {
@@ -15,13 +27,10 @@
     margin: 10px;
 }
 
-.icon {
-    width: 60px;
-    height: 60px;
-    background-color: green;
-    margin: 20px;
-}
-
 .projectName {
     font-weight: bold;
+}
+
+button:hover {
+    color: red;
 }

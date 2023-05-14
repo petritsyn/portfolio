@@ -1,5 +1,5 @@
 import React from 'react';
-import styleContainer from '../../common/styles/commonStyles.module.css';
+import styleContainer from 'common/styles/commonStyles.module.scss';
 import s from './Contacts.module.css';
 
 const Contacts = () => {

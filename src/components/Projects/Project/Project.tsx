@@ -1,20 +1,24 @@
-import React from 'react';
-import s from './Project.module.css';import styles from '../../../common/styles/commonStyles.module.css'
+import React, {FC} from 'react';
+import s from 'components/Projects/Project/Project.module.scss';
+import commonStyles from 'common/styles/commonStyles.module.scss'
 
-type PropsType = {
+type Props = {
     projectName: string
+    style: React.CSSProperties
 }
 
-const Project = (props: PropsType) => {
+const Project: FC<Props> = ({projectName, style}) => {
     return (
         <div className={s.project}>
-            <div className={s.imgContainer}>
-                <a href={'#'}><button className={styles.button}>Show</button></a>
-            </div>
-            <div>
-                <span className={s.projectName}>{props.projectName}</span>
-                <span>Description</span>
-            </div>
+            <a href={'#'}>
+                <div className={s.imgContainer} style={style}>
+                    <button className={`${commonStyles.button} ${s.viewBtn}`}>Show</button>
+                </div>
+            </a>
+            {/*<div>*/}
+            {/*    <span className={s.projectName}>{props.projectName}</span>*/}
+            {/*    <span>Description</span>*/}
+            {/*</div>*/}
         </div>
     );
 };
